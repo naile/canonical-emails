@@ -1,9 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net46</TargetFrameworks>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageProjectUrl>https://github.com/naile/canonical-emails</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/naile/canonical-emails/blob/master/LICENSE</PackageLicenseUrl>
+    <Description>
+      CanonicalEmails is a tiny library for normalization of email addresses.
+      Supports gmail, hotmail, outlook, yahoo, protonmail and a few more
+    </Description>
+    <Authors>Andreas Caravella</Authors>
+    <RepositoryUrl>https://github.com/naile/canonical-emails</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
 </Project>
