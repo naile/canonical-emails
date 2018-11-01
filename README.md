@@ -1,0 +1,2 @@
+# canonical-emails
+Email normalization
