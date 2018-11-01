@@ -4,7 +4,15 @@
 A tiny .NET Core library for email normalization. 
 Inspired by [normailize](https://github.com/soundcloud/normailize)
 
-### Usage
+
+
+## Installation
+
+`PM> Install-Package CanonicalEmails `
+
+
+
+## Usage
 
 ```C#
 var email = new MailAddress("jane.doe+foo@gmail.com")
@@ -17,7 +25,7 @@ normalized = email.Normalize() // => janedoe@gmail.com
 
 
 
-### Configuration 
+## Configuration 
 
 ```C#
 var settings = new NormalizerSettings

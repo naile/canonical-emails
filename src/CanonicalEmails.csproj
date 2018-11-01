@@ -7,8 +7,7 @@
     <PackageProjectUrl>https://github.com/naile/canonical-emails</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/naile/canonical-emails/blob/master/LICENSE</PackageLicenseUrl>
     <Description>
-      CanonicalEmails is a tiny library for normalization of email addresses.
-      Supports gmail, hotmail, outlook, yahoo, protonmail and a few more
+      CanonicalEmails provides normalization for email addresses. Supports gmail, hotmail, outlook, yahoo, protonmail and a few more
     </Description>
     <Authors>Andreas Caravella</Authors>
     <RepositoryUrl>https://github.com/naile/canonical-emails</RepositoryUrl>
