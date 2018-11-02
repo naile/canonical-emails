@@ -36,6 +36,15 @@ namespace CanonicalEmails.Tests
             normalized.ShouldBe(new MailAddress(expected));
         }
 
+        [Theory]
+        [InlineData("userexample+mytag@pm.me")]
+        [InlineData("userexample+sometag@protonmail.com")]
+        public void Protonmail_should_normalize_to(string email)
+        {
+            var normalized = Normalizer.Normalize(new MailAddress(email));
+            normalized.ShouldBe(new MailAddress("userexample@protonmail.com"));
+        }
+
         [Fact]
         public void Should_not_lowercase()
         {

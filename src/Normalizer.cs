@@ -12,12 +12,14 @@ namespace CanonicalEmails
         private static NormalizerSettings DefaultSettings;
 
         private static readonly Dictionary<string, string> domainTags;
+        private static readonly Dictionary<string, string> normalizedDomains;
         private static readonly string[] domainsWithDots;
 
         static Normalizer()
         {
             domainTags = GetDomainsWithTags();
             domainsWithDots = GetDomainsWithDots();
+            normalizedDomains = GetNormalizedDomains();
             DefaultSettings = new NormalizerSettings();
         }
 
@@ -46,8 +48,8 @@ namespace CanonicalEmails
             if (settings.LowerCase)
                 user = user.ToLowerInvariant();
 
-            if (settings.NormalizeHost && host == "googlemail.com")
-                host = "gmail.com";
+            if (settings.NormalizeHost && normalizedDomains.TryGetValue(host, out var normalizedHost))
+                host = normalizedHost;
 
             if (settings.RemoveDots && domainsWithDots.Contains(host))
                 user = user.Replace(".", string.Empty);
@@ -134,6 +136,16 @@ namespace CanonicalEmails
                 "gmail.com",
                 "googlemail.com",
                 "google.com"
+            };
+        }
+
+        private static Dictionary<string, string> GetNormalizedDomains()
+        {
+            return new Dictionary<string, string>
+            {
+                { "googlemail.com", "gmail.com" },
+                // protonmail https://protonmail.com/support/knowledge-base/pm-me-addresses/
+                { "pm.me" , "protonmail.com" }
             };
         }
     }
