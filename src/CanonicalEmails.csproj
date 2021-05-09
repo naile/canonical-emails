@@ -12,7 +12,7 @@
     <Authors>Andreas Caravella</Authors>
     <RepositoryUrl>https://github.com/naile/canonical-emails</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 # CanonicalEmails
 [![Build status](https://ci.appveyor.com/api/projects/status/uw5tdp1n21u54dug/branch/master?svg=true)](https://ci.appveyor.com/project/naile/canonical-emails/branch/master)
-[![CanonicalEmails](https://img.shields.io/badge/Nuget-v1.0.1-blue.svg)](https://www.nuget.org/packages/CanonicalEmails/)
+[![CanonicalEmails](https://img.shields.io/badge/Nuget-v1.0.2-blue.svg)](https://www.nuget.org/packages/CanonicalEmails/)
 
 A tiny .NET Core library for email normalization. 
 Inspired by [normailize](https://github.com/soundcloud/normailize)

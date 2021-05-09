@@ -33,3 +33,5 @@ msbuild.wrn
 # Visual Studio 2015
 .vs/
 artifacts/
+
+.idea/.idea.CanonicalEmail/.idea/
