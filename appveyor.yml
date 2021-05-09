@@ -7,7 +7,7 @@ before_build:
     - cmd: dotnet --version
     - cmd: dotnet restore CanonicalEmail.sln --verbosity m
 build_script:
-    - cmd: dotnet pack -c Release --output ../artifacts src/CanonicalEmails.csproj
+    - cmd: dotnet pack -c Release --output artifacts src/CanonicalEmails.csproj
 test_script:
   - cmd: dotnet test tests/CanonicalEmails.Tests.csproj
 artifacts:
