@@ -5,7 +5,7 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageProjectUrl>https://github.com/naile/canonical-emails</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/naile/canonical-emails/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Description>
       CanonicalEmails provides normalization for email addresses. Supports gmail, hotmail, outlook, yahoo, protonmail and a few more
     </Description>
