@@ -76,7 +76,7 @@ namespace CanonicalEmails
                 { "protonmail.com", "+" },
                 { "protonmail.ch", "+" },
                 // Fastmail - https://www.fastmail.com/help/receive/addressing.html
-                { "fastmail.com'", "+" },
+                { "fastmail.com", "+" },
                 { "fastmail.fm", "+" },
                 // Yahoo Mail Plus accounts, per https,//en.wikipedia.org/wiki/Yahoo!_Mail#Email_domains, use hyphens - http,//www.cnet.com/forums/discussions/did-yahoo-break-disposable-email-addresses-mail-plus-395088/
                 { "yahoo.com.ar" , "-" },
